@@ -4,10 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* CSS Variables */
-:root{
-    --navbar-height: 59px;
-}
 .wrapper{
     height: 100vh;
     overflow-x: hidden;
@@ -53,13 +49,12 @@
 }
 
 #navbar ul li{
-    /* color: white; */
     list-style: none;
     font-size: 1rem;
 }
 
 #navbar ul li a{
-    color: white;
+   color: white;
    display: block;
    padding: 5px 20px;
    border-radius: 20px;
@@ -68,5 +63,40 @@
 #navbar ul li a:hover{
     color: black;
     background-color: white;
-
 } 
+
+/* Hero Section  */
+
+.heroSection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -2;
+}
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+    transform: translateZ(-25px) scale(4);
+
+}
+h1{
+
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 10rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
