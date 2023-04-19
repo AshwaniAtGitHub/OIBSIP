@@ -100,3 +100,54 @@ h1{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
+
+
+section {
+    background-color: #006064;
+    color: white;
+    padding: 5rem 0;
+  }
+
+.bg-1{
+    background-image: url(img/audience.jpg);
+}
+.bg-2{
+    background-image: url(img/value.jpg);
+}
+.bg-3{
+    background-image: url(img/consistent.jpg);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: black;
+  }
+
+  .desc p {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
