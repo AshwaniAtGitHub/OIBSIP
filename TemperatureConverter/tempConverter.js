@@ -15,6 +15,13 @@ const calculateTemp = () => {
         let celsius = ((fah - 32) * 5 / 9).toFixed(1);
         return celsius;
     }
-    
+
+    if (valueTemp == 'cel') {
+        document.getElementById("result").innerHTML = celToFah(inputTemp) + "&#176; Fahrenheit";
+    }
+    else {
+        document.getElementById("result").innerHTML = fahToCel(inputTemp) + "&#176; Celsius";
+    }
+
 }
 
