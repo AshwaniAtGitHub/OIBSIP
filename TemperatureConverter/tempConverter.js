@@ -10,6 +10,11 @@ const calculateTemp = () => {
         return fahrenheit;
     }
 
+    // Fahrenheit to Celsius
+    const fahToCel = (fah) => {
+        let celsius = ((fah - 32) * 5 / 9).toFixed(1);
+        return celsius;
+    }
     
 }
 
